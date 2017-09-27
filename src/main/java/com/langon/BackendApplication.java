@@ -1,4 +1,4 @@
-package com.langon.backend;
+package com.langon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

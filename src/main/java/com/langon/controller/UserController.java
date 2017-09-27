@@ -1,7 +1,7 @@
-package com.langon.backend.controller;
+package com.langon.controller;
 
-import com.langon.backend.model.User;
-import com.langon.backend.service.UserService;
+import com.langon.model.User;
+import com.langon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +23,8 @@ public class UserController {
     }
 
     @RequestMapping(value="/register", method = RequestMethod.POST)
-    public User registerUser(@RequestBody User user){
+    public User registerUser(@RequestBody User user) {
         return userService.save(user);
     }
-
 
 }

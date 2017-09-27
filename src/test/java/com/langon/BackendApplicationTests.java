@@ -1,4 +1,4 @@
-package com.langon.backend;
+package com.langon;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

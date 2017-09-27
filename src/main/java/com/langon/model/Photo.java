@@ -1,13 +1,19 @@
-package com.langon.backend.model;
+package com.langon.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.CreationTimestamp;
-import java.util.List;
 
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import java.util.Date;
-
+import java.util.List;
 /**
  * Created by smcgrath on 26/09/2017.
  */
@@ -31,7 +37,7 @@ public class Photo {
 
     private int likes;
 
-    @OneToMany(mappedBy = "photo", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "photo", fetch=FetchType.EAGER)
     private List<Comment> commentList;
 
     public Long getPhotoId() {

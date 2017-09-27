@@ -1,15 +1,24 @@
-package com.langon.backend.model;
+package com.langon.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by smcgrath on 26/09/2017.
  */
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,9 +33,8 @@ public class User {
 
     //one user to many photos.
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    //this anotation is used in pairs with the @JsonBackReference to indicate it is the parent of BackReference
     @JsonManagedReference
-    private List<Photo> photoList;
+    private List<Photo> photoList;;
 
     @ManyToMany
     private List<Photo> likedPhotoList;

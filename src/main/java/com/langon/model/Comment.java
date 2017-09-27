@@ -1,4 +1,4 @@
-package com.langon.backend.model;
+package com.langon.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

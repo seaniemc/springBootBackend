@@ -1,6 +1,6 @@
-package com.langon.backend.service;
+package com.langon.service;
 
-import com.langon.backend.model.User;
+import com.langon.model.User;
 
 import java.util.List;
 

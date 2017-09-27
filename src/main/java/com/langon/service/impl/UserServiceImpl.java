@@ -1,8 +1,8 @@
-package com.langon.backend.service.impl;
+package com.langon.service.impl;
 
-import com.langon.backend.dao.UserDao;
-import com.langon.backend.model.User;
-import com.langon.backend.service.UserService;
+import com.langon.dao.UserDao;
+import com.langon.model.User;
+import com.langon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
