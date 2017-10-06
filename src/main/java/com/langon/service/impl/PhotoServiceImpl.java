@@ -5,12 +5,14 @@ import com.langon.model.Photo;
 import com.langon.model.User;
 import com.langon.service.PhotoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by smcgrath on 06/10/2017.
  */
+@Service
 public class PhotoServiceImpl implements PhotoService {
     @Autowired
     private PhotoDao photoDao;

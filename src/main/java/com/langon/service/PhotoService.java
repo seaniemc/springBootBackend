@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Created by smcgrath on 06/10/2017.
  */
+
 public interface PhotoService {
     Photo save(Photo photo);
 
