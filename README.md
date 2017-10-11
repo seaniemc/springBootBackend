@@ -58,3 +58,6 @@ The application can be tested using  [post man.](https://www.getpostman.com/apps
 #### Add comment 
 
     http://localhost:8080/rest/comment/add
+    
+## Resources
+When making this application I followed a tutorial from [Udemy](https://www.udemy.com/build-a-web-app-with-spring-boot-and-angular-2/learn/v4/overview)
